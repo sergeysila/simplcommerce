@@ -22,5 +22,11 @@ namespace PO_simplcommerce.Pages
             driver.Navigate().GoToUrl(url);
             return this;
         }
+
+        public ProductPage ChoseSmartphone()
+        {
+            driver.FindElements(By.CssSelector(".product-list>div")).Last().FindElement(By.TagName("a")).Click();
+            return new ProductPage(driver);
+        }
     }
 }

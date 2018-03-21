@@ -18,6 +18,7 @@ namespace PO_simplcommerce
         public void SetUp()
         {
             driver = new ChromeDriver();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(60);
         }
     
         [TearDown]

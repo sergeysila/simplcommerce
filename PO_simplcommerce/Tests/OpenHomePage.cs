@@ -11,10 +11,13 @@ namespace PO_simplcommerce.Tests
     class OpenHomePage : BaseTest
     {
         [Test]
-        public void OpenHPTest()
+        public void AddToCartTest()
         {
-            HomePage hp = new HomePage(driver, baseUrl);
-            hp.Open();
+            HomePage homePage = new HomePage(driver, baseUrl);
+            ProductPage productPage = homePage
+                .Open()
+                .ChoseSmartphone();
+            CartPage cartPage = productPage.AddToCart();
         }
     }
 }

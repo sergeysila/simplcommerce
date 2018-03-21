@@ -59,7 +59,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Pages\AbstractPage.cs" />
-    <Compile Include="Pages\test.cs" />
+    <Compile Include="Pages\CartPage.cs" />
+    <Compile Include="Pages\ProductPage.cs" />
     <Compile Include="Tests\BaseTest.cs" />
     <Compile Include="Pages\HomePage.cs" />
     <Compile Include="Tests\OpenHomePage.cs" />
